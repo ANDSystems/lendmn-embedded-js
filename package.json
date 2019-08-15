@@ -1,6 +1,6 @@
 {
   "name": "and-ds",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "AND DS with es6 and webpack",
   "main": "app/index.js",
   "scripts": {

@@ -6,6 +6,10 @@
   };
 
   function bridgeFunction(action, params = null) {
+    if(!!window.ReactNativeWebView) {
+      window.ReactNativeWebView.postMessage(JSON.stringify({action, params}));
+      return;
+    }
     window.postMessage(JSON.stringify({action, params}));
   }
 
